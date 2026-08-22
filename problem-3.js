@@ -1,9 +1,6 @@
 "use strict";
 const calculateWeeklyTotal = (expenses) => {
-    if (expenses.length === 0) {
-        return 0;
-    }
-    const total = expenses.reduce((acc, sum) => acc + sum);
+    const total = expenses.reduce((acc, sum) => acc + sum, 0);
     return total;
 };
 console.log(calculateWeeklyTotal([200, 450, 100]));
