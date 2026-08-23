@@ -1,6 +1,6 @@
-type result = { total: number, average: number }
+type Result = { total: number, average: number }
 
-const getQuizSummary = (scores: number[]):result => {
+const getQuizSummary = (scores: number[]):Result => {
     const total:number = scores.reduce((acc:number, sum:number) => acc+sum ,0)
     const average:number = total/scores.length
 
